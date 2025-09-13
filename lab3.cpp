@@ -47,11 +47,9 @@ int main() {
 
         for(int j = 0; j < n; j++){
 
-        if (j < n - k) {
-            newArr[j] = start_arr[j + k];
-        } else {
-            newArr[j] = start_arr[j - (n - k)];
-        }
+        if (j < n - k) newArr[j] = start_arr[j + k];
+        else newArr[j] = start_arr[j - (n - k)];
+        
         }
         copy_arr(start_arr, newArr, n);
         delete [] newArr;
@@ -59,7 +57,6 @@ int main() {
     print_arr(start_arr, n);
     delete[] start_arr;
     
-
 
     // Считалочка
     int n, k;
@@ -88,11 +85,9 @@ int main() {
         
         n--;
 
-        if (index_loha == n) {
-            index = 0;
-        } else {
-            index = index_loha;
-        }
+        if (index_loha == n) index = 0;
+        else index = index_loha;
+        
 
         delete[] peoples; 
         // print_arr(newArr, n);
