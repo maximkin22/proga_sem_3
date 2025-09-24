@@ -1,4 +1,5 @@
 #include <iostream>
+#include "BitArray.h"
 using namespace std;
 
 class BitArray
@@ -121,4 +122,4 @@ bool BitArray::operator == (const BitArray &b) const{
 bool BitArray::operator != (const BitArray &b) const{
     return !(*this == b);
 }
-#include "bit-array-test.h"
+// #include "bit-array-test.h"

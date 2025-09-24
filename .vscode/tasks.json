@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build lab4",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "lab4/BitArray_2.cpp",
+                "lab4/main.cpp",
+                "-o",
+                "lab4/a.out"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

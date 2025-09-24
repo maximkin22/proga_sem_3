@@ -130,4 +130,5 @@ bool BitArray::operator == (const BitArray &b) const{
 bool BitArray::operator != (const BitArray &b) const{
     return !(*this == b);
 }
-#include "bit-array-test2.h"
+
+// #include "bit-array-test2.h"
